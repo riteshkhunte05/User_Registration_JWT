@@ -1,27 +1,66 @@
 package com.bridgelabz.user_registration_jwt.controller;
 
 import com.bridgelabz.user_registration_jwt.dto.ResponseDTO;
+import com.bridgelabz.user_registration_jwt.dto.UserLoginDTO;
 import com.bridgelabz.user_registration_jwt.dto.UserRegistrationDTO;
 import com.bridgelabz.user_registration_jwt.model.UserData;
+import com.bridgelabz.user_registration_jwt.service.IUserService;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-    @RequestMapping("/userregistration")
-    @RestController
-    public class UserRegistrationController {
+@RequestMapping("/userregistration")
+@Slf4j
+@RestController
+public class UserRegistrationController {
 
+    @Autowired
+    IUserService IuserService;
 
-        @RequestMapping(value = {"", "/", "getUserInfo"})
-        public ResponseEntity<ResponseDTO> getUserInfo() {
-            UserData userData = null;
-            userData = new UserData(1,new UserRegistrationDTO("Rahul","Singh","singhrahul@gmail.com","Pass@123"));
-            ResponseDTO responseDTO = new ResponseDTO("Get call for UserInfo is successful ",userData);
-            return new ResponseEntity<>(responseDTO, HttpStatus.OK);
-        }
-
+    /**
+     * Method :- Method for User Login.
+     *
+     * @param  :- passing UserRegistrationDTO as Input
+     * @return :- Returning Token.
+     */
+    @PostMapping("/login")
+    public ResponseEntity<ResponseDTO> loginUser( @RequestBody UserLoginDTO userLoginDTO) {
+        log.info("inside userLogin Controller Method");
+        ResponseDTO responseDTO = new ResponseDTO("User Logged In Successfully!!!",
+                IuserService.loginUser(userLoginDTO));
+        return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.OK);
     }
 
+
+    /**
+     * Method :- Method for User Registration.
+     *
+     * @param userDTO :- passing UserRegistrationDTO as Input
+     * @return :- Returning UserData
+     */
+    @PostMapping("/register")
+    public ResponseEntity<ResponseDTO> registerUser(@RequestBody UserRegistrationDTO userDTO) {
+        UserData userData = null;
+        log.info("inside registerUser Controller Method");
+        userData = IuserService.registerUser(userDTO);
+        ResponseDTO responseDTO = new ResponseDTO("User Added Successfully.", userData);
+        return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.CREATED);
+    }
+
+    /**
+     * Method :- Method to Get All User Records.
+     *
+     * @return :- Returning  All User Records Present in Database.
+     */
+    @GetMapping("/getUserInfo")
+    public ResponseEntity<ResponseDTO> getUserInfo() {
+        List<UserData> userDataList = null;
+        userDataList = IuserService.getUserInfo();
+        ResponseDTO responseDTO = new ResponseDTO("Getting User Info ", userDataList);
+        return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.OK);
+    }
+}

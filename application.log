@@ -1,0 +1,35 @@
+2022-06-15 10:49:50.623  INFO 6252 --- [main] c.b.u.UserRegistrationJwtApplication     : Starting UserRegistrationJwtApplication using Java 11.0.15 on DESKTOP-F0VCATA with PID 6252 (E:\CFP\Advance Spring\user_registration_jwt\target\classes started by Ritesh in E:\CFP\Advance Spring\user_registration_jwt)
+2022-06-15 10:49:50.631 DEBUG 6252 --- [main] c.b.u.UserRegistrationJwtApplication     : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-15 10:49:50.633  INFO 6252 --- [main] c.b.u.UserRegistrationJwtApplication     : The following 1 profile is active: "DEV"
+2022-06-15 10:50:02.558  WARN 6252 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-15 10:50:03.728  INFO 6252 --- [main] c.b.u.UserRegistrationJwtApplication     : Started UserRegistrationJwtApplication in 14.309 seconds (JVM running for 15.437)
+2022-06-15 10:59:39.514  INFO 9984 --- [main] c.b.u.UserRegistrationJwtApplication     : Starting UserRegistrationJwtApplication using Java 11.0.15 on DESKTOP-F0VCATA with PID 9984 (E:\CFP\Advance Spring\user_registration_jwt\target\classes started by Ritesh in E:\CFP\Advance Spring\user_registration_jwt)
+2022-06-15 10:59:39.520 DEBUG 9984 --- [main] c.b.u.UserRegistrationJwtApplication     : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-15 10:59:39.523  INFO 9984 --- [main] c.b.u.UserRegistrationJwtApplication     : The following 1 profile is active: "DEV"
+2022-06-15 10:59:58.107  WARN 9984 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-15 10:59:59.889  INFO 9984 --- [main] c.b.u.UserRegistrationJwtApplication     : Started UserRegistrationJwtApplication in 22.331 seconds (JVM running for 24.757)
+2022-06-15 10:59:59.904  INFO 9984 --- [main] c.b.u.UserRegistrationJwtApplication     : User Registration Started in DEV Environment
+2022-06-15 10:59:59.912  INFO 9984 --- [main] c.b.u.UserRegistrationJwtApplication     : User Registration DB User is root
+2022-06-15 11:00:21.994  INFO 9984 --- [http-nio-8080-exec-2] c.b.u.service.UserServiceImpl            : getUserInfo Service Method Successfully executed
+2022-06-15 11:00:53.869  INFO 5516 --- [main] c.b.u.UserRegistrationJwtApplication     : Starting UserRegistrationJwtApplication using Java 11.0.15 on DESKTOP-F0VCATA with PID 5516 (E:\CFP\Advance Spring\user_registration_jwt\target\classes started by Ritesh in E:\CFP\Advance Spring\user_registration_jwt)
+2022-06-15 11:00:53.872 DEBUG 5516 --- [main] c.b.u.UserRegistrationJwtApplication     : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-15 11:00:53.874  INFO 5516 --- [main] c.b.u.UserRegistrationJwtApplication     : The following 1 profile is active: "DEV"
+2022-06-15 11:01:08.242  WARN 5516 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-15 11:01:09.898  INFO 5516 --- [main] c.b.u.UserRegistrationJwtApplication     : Started UserRegistrationJwtApplication in 17.209 seconds (JVM running for 18.409)
+2022-06-15 11:01:09.912  INFO 5516 --- [main] c.b.u.UserRegistrationJwtApplication     : User Registration Started in DEV Environment
+2022-06-15 11:01:09.919  INFO 5516 --- [main] c.b.u.UserRegistrationJwtApplication     : User Registration DB User is root
+2022-06-15 11:01:46.206  INFO 5516 --- [http-nio-8080-exec-1] c.b.u.service.UserServiceImpl            : getUserInfo Service Method Successfully executed
+2022-06-15 11:03:21.882  WARN 5516 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-06-15 11:03:51.210  INFO 5516 --- [http-nio-8080-exec-6] c.b.u.c.UserRegistrationController       : inside registerUser Controller Method
+2022-06-15 11:03:51.392  INFO 5516 --- [http-nio-8080-exec-6] c.b.u.service.UserServiceImpl            : registerUser Service Method Successfully executed
+2022-06-15 11:04:02.686  INFO 5516 --- [http-nio-8080-exec-7] c.b.u.c.UserRegistrationController       : inside registerUser Controller Method
+2022-06-15 11:04:02.792  INFO 5516 --- [http-nio-8080-exec-7] c.b.u.service.UserServiceImpl            : registerUser Service Method Successfully executed
+2022-06-15 11:04:23.332  INFO 3696 --- [main] c.b.u.UserRegistrationJwtApplication     : Starting UserRegistrationJwtApplication using Java 11.0.15 on DESKTOP-F0VCATA with PID 3696 (E:\CFP\Advance Spring\user_registration_jwt\target\classes started by Ritesh in E:\CFP\Advance Spring\user_registration_jwt)
+2022-06-15 11:04:23.336 DEBUG 3696 --- [main] c.b.u.UserRegistrationJwtApplication     : Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-15 11:04:23.338  INFO 3696 --- [main] c.b.u.UserRegistrationJwtApplication     : The following 1 profile is active: "DEV"
+2022-06-15 11:04:37.880  WARN 3696 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-15 11:04:39.097  INFO 3696 --- [main] c.b.u.UserRegistrationJwtApplication     : Started UserRegistrationJwtApplication in 17.063 seconds (JVM running for 18.593)
+2022-06-15 11:04:39.106  INFO 3696 --- [main] c.b.u.UserRegistrationJwtApplication     : User Registration Started in DEV Environment
+2022-06-15 11:04:39.112  INFO 3696 --- [main] c.b.u.UserRegistrationJwtApplication     : User Registration DB User is root
+2022-06-15 11:04:51.798  INFO 3696 --- [http-nio-8080-exec-2] c.b.u.c.UserRegistrationController       : inside registerUser Controller Method
+2022-06-15 11:04:51.986  INFO 3696 --- [http-nio-8080-exec-2] c.b.u.service.UserServiceImpl            : registerUser Service Method Successfully executed
